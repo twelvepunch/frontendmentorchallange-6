@@ -1,0 +1,114 @@
+:root {
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+}
+/* 500 700 900 */
+
+body {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Paleblue);
+}
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--Darkblue);
+}
+h2 {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--Darkblue);
+}
+a {
+  color: var(--Brightblue);
+  text-decoration: underline;
+  font-weight: 700;
+}
+a:hover {
+  color: hsl(245, 75%, 70%);
+}
+span {
+  color: var(--Desaturatedblue);
+}
+button {
+  color: var(--Desaturatedblue);
+  font-weight: 700;
+  border: none;
+}
+button:hover {
+  color: var(--Darkblue);
+}
+p {
+  color: var(--Desaturatedblue);
+  margin-top: 20px;
+}
+.a-btn {
+  color: #fff;
+  background-color: var(--Brightblue);
+  padding: 12px;
+  width: 100%;
+  border-radius: 10px;
+}
+.a-btn:hover {
+  background-color: hsl(245, 75%, 70%);
+  color: #fff;
+}
+.container {
+  width: 350px;
+  height: 600px;
+  background-color: var(--Verypaleblue);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px 0px rgba(107, 107, 107, 1);
+}
+.imgbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  object-fit: cover;
+}
+.body-box {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 32px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 40px;
+}
+
+.planbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 10px;
+  margin-bottom: -12px;
+  border-radius: 10px;
+}
+
+.plan-text {
+  margin-right: 44px;
+}
